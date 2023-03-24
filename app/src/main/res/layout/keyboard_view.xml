@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:backgroundTint="@color/white"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/company_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/mevitz"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/gpt_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:hint="Type here"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/all_keyboard_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyboard_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:keyTextSize="24sp"
+            android:shadowRadius="1"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
